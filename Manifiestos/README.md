@@ -1,4 +1,4 @@
-                                          PROYECTO ASIR KUBERNETES 
+                                                    PROYECTO ASIR KUBERNETES 
                                           
 Este repositorio contiene los archivos YAML utilizados para desplegar varias aplicaciones en un clúster de Kubernetes. El proyecto está orientado a la demostración de conceptos fundamentales de Kubernetes, incluyendo el uso de Deployments, Services, Persistent Volumes (PV), y Persistent Volume Claims (PVC). Los recursos están organizados en carpetas para facilitar su comprensión y aplicación.
 
@@ -22,13 +22,14 @@ Clona el repositorio y navega hasta la carpeta de los manifiestos que desees apl
 
 Usa kubectl para aplicar los archivos de configuración:
 
-bash
-Copiar código
 kubectl apply -f <archivo>.yaml
+
 Archivos incluidos:
 
 Los manifiestos contienen configuraciones para crear Pods, Services, y persistencia de datos utilizando PV y PVC.
+
 Descripción de las aplicaciones
+
 Hello World: Una aplicación básica para probar el funcionamiento de Kubernetes. Desplegada con un Deployment y expuesta mediante un Service.
 WordPress y MySQL: Un despliegue de una aplicación web de WordPress con su base de datos MySQL, donde ambos servicios están configurados con sus respectivos Deployments y Services.
 Persistent Storage: Configuración de almacenamiento persistente utilizando un PersistentVolume y un PersistentVolumeClaim que aseguran que los datos de las aplicaciones (como los de MySQL) no se pierdan si los Pods se reinician.
