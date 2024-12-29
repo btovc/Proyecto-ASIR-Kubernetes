@@ -1,0 +1,11 @@
+  GNU nano 6.2                   wordpress-pvc.yaml                             
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: wordpress-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
