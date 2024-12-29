@@ -47,4 +47,4 @@ Los manifiestos contienen configuraciones para crear **Pods**, **Services**, y p
 ## Contribuciones
 
 Si tienes mejoras o sugerencias, ¡siéntete libre de hacer un pull request! Este repositorio es para demostrar el proceso de despliegue de aplicaciones en Kubernetes, pero siempre estamos abiertos a mejoras. 
-Alberto Vázquez 😊
+#Alberto Vázquez 😊
