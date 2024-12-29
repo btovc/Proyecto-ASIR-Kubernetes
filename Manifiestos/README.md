@@ -1,4 +1,5 @@
-PROYECTO ASIR KUBERNETES 
+                                          PROYECTO ASIR KUBERNETES 
+                                          
 Este repositorio contiene los archivos YAML utilizados para desplegar varias aplicaciones en un clúster de Kubernetes. El proyecto está orientado a la demostración de conceptos fundamentales de Kubernetes, incluyendo el uso de Deployments, Services, Persistent Volumes (PV), y Persistent Volume Claims (PVC). Los recursos están organizados en carpetas para facilitar su comprensión y aplicación.
 
 Estructura del repositorio
