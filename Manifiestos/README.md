@@ -25,6 +25,7 @@ Usa kubectl para aplicar los archivos de configuración:
 kubectl apply -f <archivo>.yaml
 
 Archivos incluidos:
+
 Los manifiestos contienen configuraciones para crear Pods, Services, y persistencia de datos utilizando PV y PVC.
 
 Descripción de las aplicaciones
