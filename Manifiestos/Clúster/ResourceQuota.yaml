@@ -1,0 +1,12 @@
+  GNU nano 6.2                                                                                 ResourceQuota.yaml                                                                                           
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: mem-cpu-quota
+  namespace: default
+spec:
+  hard:
+    requests.cpu: "4" # Aumentar el valor de CPU solicitado a 4 CPUs
+    requests.memory: "6Gi"     # Si también es necesario, puedes aumentar la memoria
+    limits.cpu: "6"    # Aumentar el valor del límite de CPU a 4 CPUs
+    limits.memory: "10Gi"
