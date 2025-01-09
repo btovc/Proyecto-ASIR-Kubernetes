@@ -20,7 +20,7 @@ Los archivos YAML y otros recursos están organizados en las siguientes carpetas
   - `ResourceQuota.yaml`: Define límites globales de recursos (CPU y memoria) dentro de un namespace.
   - `LimitRange.yaml`: Establece límites predeterminados de recursos para los contenedores en el namespace.
 
-- **`Helm-chart/`**  
+- **`Helm-Chart/`**  
   Contiene un Helm chart con su archivo `index.yaml`, utilizado para desplegar aplicaciones de forma más sencilla y estructurada. Este chart se creó específicamente para este proyecto y facilita la gestión de versiones y despliegues.
 
 ## ¿Cómo usar estos archivos?
