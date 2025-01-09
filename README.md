@@ -6,16 +6,16 @@ Este repositorio contiene los archivos YAML utilizados para desplegar varias apl
 
 Los archivos YAML y otros recursos están organizados en las siguientes carpetas:
 
-- **`hello-world/`**  
+- **`Hello-Horld/`**  
   Contiene los archivos necesarios para desplegar una aplicación simple de "Hello World". Incluye un Deployment y un Service para exponer la aplicación.
 
-- **`wordpress-mysql/`**  
+- **`Wordpress-Mysql/`**  
   Incluye los archivos para desplegar una aplicación de WordPress junto con MySQL, con sus respectivos Deployment y Service para ambos.
 
-- **`pv-pvc/`**  
+- **`PV-PVC/`**  
   Contiene el archivo YAML para configurar un **PersistentVolume (PV)** y un **PersistentVolumeClaim (PVC)**, necesarios para gestionar almacenamiento persistente dentro del clúster.
 
-- **`cluster/`**  
+- **`Cluster/`**  
   Contiene los archivos para gestionar recursos globales en el clúster:
   - `ResourceQuota.yaml`: Define límites globales de recursos (CPU y memoria) dentro de un namespace.
   - `LimitRange.yaml`: Establece límites predeterminados de recursos para los contenedores en el namespace.
