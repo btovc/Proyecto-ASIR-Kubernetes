@@ -53,8 +53,20 @@ Los manifiestos contienen configuraciones para crear **Pods**, **Services**, y p
 - **Persistent Storage**  
   Configuración de almacenamiento persistente utilizando un PersistentVolume y un PersistentVolumeClaim que aseguran que los datos de las aplicaciones (como los de MySQL) no se pierdan si los Pods se reinician.
 
+- **Gestión de recursos con ResourceQuota y LimitRange**  
+  Configuraciones globales para limitar y definir recursos disponibles en el namespace default, garantizando un uso controlado de CPU y memoria en el clúster.
+
+- **Cluster**  
+  Archivos para gestionar recursos globales en el clúster, incluyendo:
+  - `ResourceQuota.yaml`: Define límites globales de recursos (CPU y memoria) dentro de un namespace.
+  - `LimitRange.yaml`: Establece límites predeterminados de recursos para los contenedores en el namespace.
+
+- **Helm Chart**  
+  Contiene un Helm chart con su archivo `index.yaml`, utilizado para desplegar aplicaciones de forma más sencilla y estructurada. Este chart se creó específicamente para este proyecto y facilita la gestión de versiones y despliegues de aplicaciones.
+
 ## Contribuciones
 
-Si tienes mejoras o sugerencias, ¡siéntete libre de hacer un pull request! Este repositorio es para demostrar el proceso de despliegue de aplicaciones en Kubernetes, pero siempre estamos abiertos a mejoras. 
+Si tienes mejoras o sugerencias, ¡siéntete libre de hacer un pull request! Este repositorio es para demostrar el proceso de despliegue de aplicaciones en Kubernetes, pero siempre estamos abiertos a mejoras.
+
 
 Alberto Vázquez 😊
