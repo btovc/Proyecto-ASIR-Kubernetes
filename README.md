@@ -9,13 +9,13 @@ Los archivos YAML y otros recursos están organizados en las siguientes carpetas
 - **`Hello-World/`**  
   Contiene los archivos necesarios para desplegar una aplicación simple de "Hello World". Incluye un Deployment y un Service para exponer la aplicación.
 
-- **`Wordpress-Mysql/`**  
+- **`Wordpress-MySql/`**  
   Incluye los archivos para desplegar una aplicación de WordPress junto con MySQL, con sus respectivos Deployment y Service para ambos.
 
 - **`PV-PVC/`**  
   Contiene el archivo YAML para configurar un **PersistentVolume (PV)** y un **PersistentVolumeClaim (PVC)**, necesarios para gestionar almacenamiento persistente dentro del clúster.
 
-- **`Cluster/`**  
+- **`Clúster/`**  
   Contiene los archivos para gestionar recursos globales en el clúster:
   - `ResourceQuota.yaml`: Define límites globales de recursos (CPU y memoria) dentro de un namespace.
   - `LimitRange.yaml`: Establece límites predeterminados de recursos para los contenedores en el namespace.
