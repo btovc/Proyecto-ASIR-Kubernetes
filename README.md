@@ -6,7 +6,7 @@ Este repositorio contiene los archivos YAML utilizados para desplegar varias apl
 
 Los archivos YAML y otros recursos están organizados en las siguientes carpetas:
 
-- **`Hello-Horld/`**  
+- **`Hello-World/`**  
   Contiene los archivos necesarios para desplegar una aplicación simple de "Hello World". Incluye un Deployment y un Service para exponer la aplicación.
 
 - **`Wordpress-Mysql/`**  
