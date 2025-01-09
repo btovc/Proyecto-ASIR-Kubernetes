@@ -1,11 +1,10 @@
-
 <h1 align="center">PROYECTO ASIR KUBERNETES</h1>
 
-Este repositorio contiene los archivos YAML utilizados para desplegar varias aplicaciones en un clúster de Kubernetes. El proyecto está orientado a la demostración de conceptos fundamentales de Kubernetes, incluyendo el uso de **Deployments**, **Services**, **Persistent Volumes (PV)** y **Persistent Volume Claims (PVC)**. Los recursos están organizados en carpetas para facilitar su comprensión y aplicación.
+Este repositorio contiene los archivos YAML utilizados para desplegar varias aplicaciones en un clúster de Kubernetes. El proyecto está orientado a la demostración de conceptos fundamentales de Kubernetes, incluyendo el uso de **Deployments**, **Services**, **Persistent Volumes (PV)**, **Persistent Volume Claims (PVC)** y herramientas como **Helm**. Los recursos están organizados en carpetas para facilitar su comprensión y aplicación.
 
 ## Estructura del repositorio
 
-Los archivos YAML están organizados en las siguientes carpetas:
+Los archivos YAML y otros recursos están organizados en las siguientes carpetas:
 
 - **`hello-world/`**  
   Contiene los archivos necesarios para desplegar una aplicación simple de "Hello World". Incluye un Deployment y un Service para exponer la aplicación.
@@ -16,18 +15,28 @@ Los archivos YAML están organizados en las siguientes carpetas:
 - **`pv-pvc/`**  
   Contiene el archivo YAML para configurar un **PersistentVolume (PV)** y un **PersistentVolumeClaim (PVC)**, necesarios para gestionar almacenamiento persistente dentro del clúster.
 
+- **`cluster/`**  
+  Contiene los archivos para gestionar recursos globales en el clúster:
+  - `ResourceQuota.yaml`: Define límites globales de recursos (CPU y memoria) dentro de un namespace.
+  - `LimitRange.yaml`: Establece límites predeterminados de recursos para los contenedores en el namespace.
+
+- **`chart/`**  
+  Contiene un Helm chart con su archivo `index.yaml`, utilizado para desplegar aplicaciones de forma más sencilla y estructurada. Este chart se creó específicamente para este proyecto y facilita la gestión de versiones y despliegues.
+
 ## ¿Cómo usar estos archivos?
 
 ### Pre-requisitos:
 1. Tener un clúster de Kubernetes en funcionamiento.
 2. Tener acceso a `kubectl` para aplicar los archivos YAML.
+3. Tener instalado **Helm** para utilizar el chart incluido en el proyecto.
 
-### Desplegar las aplicaciones:
+### Desplegar las aplicaciones con YAML:
 1. Clona este repositorio y navega hasta la carpeta de los manifiestos que desees aplicar.
 2. Usa el siguiente comando para aplicar los archivos de configuración:
 
    ```bash
    kubectl apply -f <archivo>.yaml
+
    ```
 
 ### Archivos incluidos:
